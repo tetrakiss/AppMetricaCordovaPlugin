@@ -1,4 +1,4 @@
-##PhoneGap\XDK Cordova plug-in for Yandex Metrica 2.0##
+##PhoneGap Cordova Ionic plug-in for AppMetrica (Yandex) ^2.0##
 
 Android and iOS are supported
 
