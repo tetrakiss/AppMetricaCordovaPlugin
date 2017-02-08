@@ -52,4 +52,13 @@
     }
 };
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [YMMYandexMetrica handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+    return [YMMYandexMetrica handleOpenURL:url];
+}
+
 @end
