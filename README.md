@@ -11,7 +11,7 @@ window.AppMetrica.reportEvent('event' ,[ success, fail]);
 
 window.AppMetrica.reportEventJson('event', json ,[ success, fail]);
 ```
-###Instalation###
+###Installation###
 
 Install CocoaPods
 
