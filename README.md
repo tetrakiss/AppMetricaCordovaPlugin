@@ -15,8 +15,13 @@ window.AppMetrica.reportEventJson('event', json ,[ success, fail]);
 
 Install CocoaPods
 
-`cd to iOS platform folder
-run pod install`
+
+```
+cordova plugin add https://github.com/tetrakiss/AppMetricaCordovaPlugin.git
+cordova prepare
+cd to iOS platform folder
+run pod install
+```
 
 ###in app.js add ###
 
@@ -25,4 +30,13 @@ $ionicPlatform.ready(function() {
 window.AppMetrica.activate('key here', [ success, fail]);
 ...
 }
+```
+
+###in controller add ###
+```javascript
+.controller('MyCtrl', function($window) {
+ $window.AppMetrica.reportEventJson('EVENT NAME' , {'key': 'value', 'key': 'value' }, [success, fail]);
+...
+}
+
 ```
